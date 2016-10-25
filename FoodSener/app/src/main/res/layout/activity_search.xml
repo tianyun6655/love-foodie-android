@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292929"
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0232933"
+        >
+   <include layout="@layout/tool_bar"/>
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        >
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Address"
+            android:textSize="15sp"
+            android:textColor="#fff"
+        />
+        <EditText
+            android:id="@+id/address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            android:textSize="15sp"
+            android:textColorHint="#fff"
+            android:paddingTop="15dp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/address_recycle"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+    </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

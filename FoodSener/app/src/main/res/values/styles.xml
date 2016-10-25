@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/toolBarBackground</item>
+        <item name="colorPrimaryDark">@color/toolBarBackground</item>
+        <item name="colorAccent">#06BEBD</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:listDivider">@drawable/divider</item>
+
+    </style>
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground"> @android:color/transparent </item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

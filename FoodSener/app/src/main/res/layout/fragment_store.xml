@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/signUpBackground"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/imag_layout"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/respic"
+        >
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="#e02A2A2A"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Noodle Talk"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Mon. Thus. Sat."
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Pick Up Only"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="1751 cape horn, San Jose, CA, 95131"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+     <android.support.v7.widget.RecyclerView
+         android:id="@+id/store_food_recycle"
+         android:layout_below="@id/imag_layout"
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         />
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/plusiconbig"
+        android:background="@drawable/background_image_round"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="170dp"
+        android:elevation="3dp"
+
+        />
+</RelativeLayout>

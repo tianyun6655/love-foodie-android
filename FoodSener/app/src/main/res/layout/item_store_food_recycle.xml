@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/signUpBackground"
+    >
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/food_img"
+          android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/noodtal"
+        app:riv_oval="true"
+        android:layout_centerVertical="true"
+
+        />
+    <TextView
+        android:id="@+id/food_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Beef Noodle"
+        android:textColor="@color/toolBarBackground"
+        android:textSize="13sp"
+        android:layout_toRightOf="@id/food_img"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/food_price"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="$10"
+        android:textColor="@color/toolBarBackground"
+        android:textSize="10sp"
+        android:layout_alignLeft="@id/food_name"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/food_name"
+        />
+    <TextView
+        android:id="@+id/food_storage"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Storage:15"
+        android:textColor="@color/toolBarBackground"
+        android:textSize="10sp"
+        android:layout_alignLeft="@id/food_name"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/food_price"
+        />
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/righticon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>
